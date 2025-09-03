@@ -21,7 +21,7 @@ app = FastAPI(title="CSV Intelligence API")
 # ✅ Fixed CORS for Vercel frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://v0-csv-rag-dashboard.vercel.app"],  # Removed trailing slash
+    allow_origins=["*"],  # Removed trailing slash
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
